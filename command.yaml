@@ -1,0 +1,16 @@
+#### ADD REPO ####
+
+helm repo add elastic https://helm.elastic.co
+
+#### INSTALL ELASTICSEARCH CHART ####
+
+helm install <NAME OF THE CHART> elastic/elasticsearch 
+
+EX:- helm install elasticserch elastic/elasticserch -f elastic-stage.yaml
+
+
+#### INSTALL KIBANA ######
+
+helm install <NAME OF THE CHART> elastic/kibana --<VERSION>
+
+EX:- helm install my-kibana elastic/kibana --version 7.17.3
